@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lisrviewitem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/listthumbnail"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:id="@+id/namelistitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/listthumbnail"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/listthumbnail"
+        android:maxLines="1"
+        android:textColor="#ffffffff"
+        android:text="username"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/detaillistitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/listthumbnail"
+        android:layout_below="@+id/namelistitem"
+        android:maxLines="5"
+        android:textColor="#d6c073"
+        android:text="Tweets"
+        android:textSize="10sp" />
+
+</RelativeLayout>
